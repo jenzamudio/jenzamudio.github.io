@@ -1,0 +1,1 @@
+Put your headshot and other website images in this folder. We can update the About page to use your actual photo later.
