@@ -744,16 +744,16 @@ nav a.active {
 }
 
 
-/* ---------- PUBLICATION TAGS ---------- */
+/* =========================================================
+   PUBLICATION TAGS
+   Minimal academic-style research labels
+   ========================================================= */
 
 .publication-tags {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 8px;
-
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .tag {
@@ -761,76 +761,42 @@ nav a.active {
 
     padding: 5px 9px;
 
-    border: 1px solid #d5d5d5;
+    border: 1px solid #d6d6d6;
+    background: #fafafa;
 
-    font-size: 9px;
+    color: #555;
 
+    font-size: 10px;
     font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
 
-    letter-spacing: 1px;
-
-    color: #666;
-
-    background: #ffffff;
+    white-space: nowrap;
 }
 
+/* Keep every research category visually consistent */
 
-/* Slightly differentiated tag colors */
-
-.tag-connection {
-    border-color: #b98b94;
-
-    color: #8b2332;
-}
-
-.tag-healthcare {
-    border-color: #cfcfcf;
-
-    color: #555;
-}
-
-.tag-human-factors {
-    border-color: #cfcfcf;
-
-    color: #555;
-}
-
-.tag-systems {
-    border-color: #cfcfcf;
-
-    color: #555;
-}
-
-.tag-surgery {
-    border-color: #bdbdbd;
-
-    color: #444;
-}
-
-.tag-cognitive {
-    border-color: #cfcfcf;
-
-    color: #555;
-}
-
-.tag-qualitative {
-    border-color: #b98b94;
-
-    color: #8b2332;
-}
-
-.tag-measurement {
-    border-color: #b98b94;
-
-    color: #8b2332;
-}
-
+.tag-connection,
+.tag-qualitative,
+.tag-healthcare,
+.tag-systems,
+.tag-surgery,
+.tag-human-factors,
+.tag-cognitive,
+.tag-measurement,
 .tag-wellbeing {
-    border-color: #b98b94;
-
-    color: #8b2332;
+    color: #555;
+    background: #fafafa;
+    border-color: #d6d6d6;
 }
 
+
+/* Subtle hover effect */
+
+.tag:hover {
+    color: #8b2332;
+    border-color: #8b2332;
+}
 
 /* ---------- PAPER LINKS ---------- */
 
