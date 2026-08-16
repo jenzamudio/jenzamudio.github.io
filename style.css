@@ -3,7 +3,9 @@
    ========================================================= */
 
 
-/* ---------- GLOBAL ---------- */
+/* =========================================================
+   GLOBAL
+   ========================================================= */
 
 * {
     box-sizing: border-box;
@@ -32,7 +34,9 @@ img {
 }
 
 
-/* ---------- HEADER ---------- */
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -76,8 +80,15 @@ nav a:hover {
     color: #8b2332;
 }
 
+nav a.active {
+    color: #8b2332;
+    font-weight: 700;
+}
 
-/* ---------- HERO ---------- */
+
+/* =========================================================
+   HOMEPAGE — HERO
+   ========================================================= */
 
 .hero {
     max-width: 1250px;
@@ -179,7 +190,9 @@ nav a:hover {
 }
 
 
-/* ---------- HERO PHOTO ---------- */
+/* =========================================================
+   HOMEPAGE — HERO PHOTO
+   ========================================================= */
 
 .hero-image {
     width: 100%;
@@ -220,7 +233,9 @@ nav a:hover {
 }
 
 
-/* ---------- RESEARCH INTRO ---------- */
+/* =========================================================
+   HOMEPAGE — RESEARCH INTRO
+   ========================================================= */
 
 .research-intro {
     background: #f5f5f3;
@@ -266,7 +281,9 @@ nav a:hover {
 }
 
 
-/* ---------- RESEARCH CARDS ---------- */
+/* =========================================================
+   HOMEPAGE — RESEARCH CARDS
+   ========================================================= */
 
 .research-grid {
     max-width: 1250px;
@@ -332,7 +349,9 @@ nav a:hover {
 }
 
 
-/* ---------- FEATURED RESEARCH ---------- */
+/* =========================================================
+   HOMEPAGE — FEATURED RESEARCH
+   ========================================================= */
 
 .featured {
     max-width: 1250px;
@@ -392,7 +411,9 @@ nav a:hover {
 }
 
 
-/* ---------- APPROACH ---------- */
+/* =========================================================
+   HOMEPAGE — APPROACH
+   ========================================================= */
 
 .approach {
     background: #202020;
@@ -440,7 +461,743 @@ nav a:hover {
 }
 
 
-/* ---------- FOOTER ---------- */
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
+
+
+/* ---------- PUBLICATIONS HERO ---------- */
+
+.publications-page {
+    width: 100%;
+}
+
+.publications-hero {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    padding: 100px 45px 85px;
+}
+
+.publications-hero .section-label {
+    margin-bottom: 25px;
+}
+
+.publications-hero h1 {
+    max-width: 950px;
+
+    margin: 0;
+
+    font-size: clamp(45px, 6vw, 78px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+}
+
+.publications-intro {
+    max-width: 700px;
+
+    margin: 35px 0 25px;
+
+    color: #666;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+}
+
+.scholar-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #202020;
+
+    padding-bottom: 4px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.scholar-link:hover {
+    color: #8b2332;
+
+    border-color: #8b2332;
+}
+
+
+/* ---------- PUBLICATION FILTERS ---------- */
+
+.publication-filters {
+    background: #f5f5f3;
+
+    padding: 55px 45px 60px;
+
+    border-top: 1px solid #e5e5e5;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-label {
+    max-width: 1250px;
+
+    margin: 0 auto 25px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+.filter-buttons {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.filter-button {
+    appearance: none;
+
+    border: 1px solid #cfcfcf;
+
+    background: #ffffff;
+
+    color: #444;
+
+    padding: 10px 17px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.filter-button:hover {
+    border-color: #8b2332;
+
+    color: #8b2332;
+}
+
+.filter-button.active {
+    background: #8b2332;
+
+    border-color: #8b2332;
+
+    color: #ffffff;
+}
+
+
+/* ---------- PUBLICATION SECTIONS ---------- */
+
+.publication-section {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 105px 45px;
+}
+
+.publication-section + .publication-section {
+    border-top: 1px solid #e0e0e0;
+}
+
+.publication-section-heading {
+    max-width: 850px;
+
+    margin-bottom: 60px;
+}
+
+.publication-section-heading .section-label {
+    margin-bottom: 20px;
+}
+
+.publication-section-heading h2 {
+    margin: 0;
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.publication-section-heading > p:not(.section-label) {
+    max-width: 700px;
+
+    margin: 25px 0 0;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* ---------- PUBLICATION CARD ---------- */
+
+.publication {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 45px;
+
+    padding: 50px 0;
+
+    border-top: 1px solid #d8d8d8;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.publication:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.publication-year {
+    padding-top: 5px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #8b2332;
+}
+
+.publication-content {
+    max-width: 850px;
+}
+
+.publication-status {
+    margin: 0 0 12px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    color: #8b2332;
+}
+
+.publication-content h3 {
+    margin: 0;
+
+    font-size: 25px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    color: #202020;
+}
+
+.authors {
+    margin: 18px 0 0;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+.journal {
+    margin: 10px 0 0;
+
+    font-size: 15px;
+
+    color: #666;
+}
+
+
+/* ---------- PUBLICATION TAGS ---------- */
+
+.publication-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border: 1px solid #d5d5d5;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #666;
+
+    background: #ffffff;
+}
+
+
+/* Slightly differentiated tag colors */
+
+.tag-connection {
+    border-color: #b98b94;
+
+    color: #8b2332;
+}
+
+.tag-healthcare {
+    border-color: #cfcfcf;
+
+    color: #555;
+}
+
+.tag-human-factors {
+    border-color: #cfcfcf;
+
+    color: #555;
+}
+
+.tag-systems {
+    border-color: #cfcfcf;
+
+    color: #555;
+}
+
+.tag-surgery {
+    border-color: #bdbdbd;
+
+    color: #444;
+}
+
+.tag-cognitive {
+    border-color: #cfcfcf;
+
+    color: #555;
+}
+
+.tag-qualitative {
+    border-color: #b98b94;
+
+    color: #8b2332;
+}
+
+.tag-measurement {
+    border-color: #b98b94;
+
+    color: #8b2332;
+}
+
+.tag-wellbeing {
+    border-color: #b98b94;
+
+    color: #8b2332;
+}
+
+
+/* ---------- PAPER LINKS ---------- */
+
+.paper-link {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid #202020;
+
+    padding-bottom: 3px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.paper-link:hover {
+    color: #8b2332;
+
+    border-color: #8b2332;
+}
+
+
+/* ---------- RESEARCH IN PROGRESS ---------- */
+
+.research-in-progress {
+    background: #f5f5f3;
+
+    max-width: none;
+
+    padding-left: max(45px, calc((100% - 1160px) / 2));
+
+    padding-right: max(45px, calc((100% - 1160px) / 2));
+}
+
+.research-in-progress .publication {
+    max-width: 1250px;
+}
+
+
+/* =========================================================
+   ABOUT / PROFILE PAGE
+   ========================================================= */
+
+
+/* ---------- PROFILE HEADER ---------- */
+
+.profile-header {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    padding: 80px 45px 100px;
+
+    display: grid;
+
+    grid-template-columns: 380px 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.profile-photo {
+    position: relative;
+
+    width: 380px;
+
+    max-width: 100%;
+}
+
+.profile-photo img {
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.profile-photo::after {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+    bottom: -18px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #8b2332;
+
+    z-index: -1;
+}
+
+.profile-intro {
+    max-width: 650px;
+}
+
+.profile-intro h1 {
+    margin: 0;
+
+    font-size: clamp(55px, 6vw, 82px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    font-weight: 500;
+}
+
+.profile-title {
+    margin: 40px 0 5px;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+}
+
+.profile-affiliation {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 16px;
+}
+
+.profile-description {
+    max-width: 600px;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+.profile-links {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+.profile-links a {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #202020;
+
+    padding-bottom: 4px;
+}
+
+.profile-links a:hover {
+    color: #8b2332;
+
+    border-color: #8b2332;
+}
+
+
+/* ---------- PROFILE SECTIONS ---------- */
+
+.profile-section {
+    padding: 100px 45px;
+
+    border-top: 1px solid #dedede;
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+.profile-section-label,
+.profile-highlight-label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b2332;
+}
+
+.profile-section-content {
+    max-width: 800px;
+}
+
+.profile-section-content h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.profile-section-content p {
+    max-width: 750px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* ---------- INTERESTS ---------- */
+
+.interest-list {
+    margin-top: 55px;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+.interest-list div {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d8d8d8;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+.interest-list span {
+    width: 35px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #8b2332;
+}
+
+
+/* ---------- RESEARCH VISION ---------- */
+
+.profile-highlight {
+    background: #202020;
+
+    color: white;
+
+    padding: 100px max(45px, calc((100% - 1160px) / 2));
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+}
+
+.profile-highlight blockquote {
+    margin: 0;
+
+    max-width: 850px;
+
+    font-size: clamp(35px, 5vw, 62px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 400;
+}
+
+.profile-highlight p {
+    max-width: 700px;
+
+    margin-top: 40px;
+
+    color: #c9c9c9;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.profile-highlight-label {
+    color: #d4a0aa;
+}
+
+
+/* ---------- EDUCATION ---------- */
+
+.education-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+.education-item:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.education-year {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+.education-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 23px;
+
+    font-weight: 500;
+}
+
+.education-item p {
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #666;
+}
+
+
+/* ---------- BACKGROUND ---------- */
+
+.background-section {
+    padding-bottom: 130px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
     max-width: 1250px;
@@ -484,10 +1241,12 @@ footer {
 
 
 /* =========================================================
-   TABLET
+   TABLET — 900px
    ========================================================= */
 
 @media (max-width: 900px) {
+
+    /* ---------- HEADER ---------- */
 
     .nav-container {
         padding: 20px 25px;
@@ -500,6 +1259,9 @@ footer {
     nav a {
         font-size: 12px;
     }
+
+
+    /* ---------- HOMEPAGE ---------- */
 
     .hero {
         grid-template-columns: 1fr;
@@ -539,20 +1301,81 @@ footer {
         gap: 45px;
     }
 
+
+    /* ---------- PUBLICATIONS ---------- */
+
+    .publications-hero {
+        padding: 75px 25px 65px;
+    }
+
+    .publication-filters {
+        padding: 45px 25px 50px;
+    }
+
+    .publication-section {
+        padding: 80px 25px;
+    }
+
+    .publication {
+        grid-template-columns: 75px 1fr;
+
+        gap: 30px;
+    }
+
+    .research-in-progress {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .profile-header {
+        padding: 70px 25px 100px;
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .profile-photo {
+        max-width: 500px;
+    }
+
+    .profile-section {
+        padding: 80px 25px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .profile-highlight {
+        padding: 80px 25px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
     footer {
         padding: 45px 25px;
 
         grid-template-columns: 1fr;
     }
-
 }
 
 
 /* =========================================================
-   MOBILE
+   MOBILE — 600px
    ========================================================= */
 
 @media (max-width: 600px) {
+
+    /* ---------- HEADER ---------- */
 
     .nav-container {
         flex-direction: column;
@@ -561,8 +1384,12 @@ footer {
 
     nav {
         flex-wrap: wrap;
+
         gap: 12px 18px;
     }
+
+
+    /* ---------- HOMEPAGE ---------- */
 
     .hero {
         padding-top: 55px;
@@ -598,399 +1425,103 @@ footer {
         font-size: 42px;
     }
 
-}
 
-/* =========================================================
-   ABOUT / PROFILE PAGE
-   ========================================================= */
+    /* ---------- PUBLICATIONS ---------- */
 
+    .publications-hero {
+        padding: 60px 20px 55px;
+    }
 
-/* ---------- PROFILE HEADER ---------- */
+    .publications-hero h1 {
+        font-size: 43px;
 
-.profile-header {
-    max-width: 1150px;
-    margin: 0 auto;
+        letter-spacing: -2px;
+    }
 
-    padding: 80px 45px 100px;
+    .publications-intro {
+        font-size: 16px;
 
-    display: grid;
+        line-height: 1.7;
+    }
 
-    grid-template-columns: 380px 1fr;
+    .publication-filters {
+        padding: 40px 20px 45px;
+    }
 
-    gap: 75px;
+    .filter-buttons {
+        gap: 8px;
+    }
 
-    align-items: center;
-}
+    .filter-button {
+        padding: 9px 12px;
 
+        font-size: 9px;
+    }
 
-.profile-photo {
-    position: relative;
+    .publication-section {
+        padding: 65px 20px;
+    }
 
-    width: 380px;
+    .publication-section-heading {
+        margin-bottom: 40px;
+    }
 
-    max-width: 100%;
-}
+    .publication-section-heading h2 {
+        font-size: 40px;
+    }
 
+    .publication-section-heading > p:not(.section-label) {
+        font-size: 16px;
+    }
 
-.profile-photo img {
-    width: 100%;
-
-    aspect-ratio: 3 / 4;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-
-.profile-photo::after {
-    content: "";
-
-    position: absolute;
-
-    left: 18px;
-    bottom: -18px;
-
-    width: 100%;
-    height: 100%;
-
-    border: 1px solid #8b2332;
-
-    z-index: -1;
-}
-
-
-.profile-intro {
-    max-width: 650px;
-}
-
-
-.profile-intro h1 {
-    margin: 0;
-
-    font-size: clamp(55px, 6vw, 82px);
-
-    line-height: 0.9;
-
-    letter-spacing: -5px;
-
-    font-weight: 500;
-}
-
-
-.profile-title {
-    margin: 40px 0 5px;
-
-    font-size: 20px;
-
-    line-height: 1.4;
-
-    font-weight: 500;
-}
-
-
-.profile-affiliation {
-    margin: 0;
-
-    color: #777;
-
-    font-size: 16px;
-}
-
-
-.profile-description {
-    max-width: 600px;
-
-    margin-top: 40px;
-
-    font-size: 20px;
-
-    line-height: 1.7;
-
-    color: #555;
-}
-
-
-.profile-links {
-    display: flex;
-
-    gap: 30px;
-
-    margin-top: 35px;
-}
-
-
-.profile-links a {
-    font-size: 14px;
-
-    font-weight: 700;
-
-    border-bottom: 1px solid #202020;
-
-    padding-bottom: 4px;
-}
-
-
-.profile-links a:hover {
-    color: #8b2332;
-
-    border-color: #8b2332;
-}
-
-
-/* ---------- PROFILE SECTIONS ---------- */
-
-.profile-section {
-    padding: 100px 45px;
-
-    border-top: 1px solid #dedede;
-
-    display: grid;
-
-    grid-template-columns: 0.3fr 1fr;
-
-    gap: 80px;
-
-    max-width: 1250px;
-
-    margin: 0 auto;
-}
-
-
-.profile-section-label,
-.profile-highlight-label {
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    color: #8b2332;
-}
-
-
-.profile-section-content {
-    max-width: 800px;
-}
-
-
-.profile-section-content h2 {
-    margin: 0 0 30px;
-
-    font-size: clamp(35px, 5vw, 60px);
-
-    line-height: 1.05;
-
-    letter-spacing: -2px;
-
-    font-weight: 500;
-}
-
-
-.profile-section-content p {
-    max-width: 750px;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    color: #666;
-}
-
-
-/* ---------- INTERESTS ---------- */
-
-.interest-list {
-    margin-top: 55px;
-
-    border-top: 1px solid #d8d8d8;
-}
-
-
-.interest-list div {
-    padding: 20px 0;
-
-    border-bottom: 1px solid #d8d8d8;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 30px;
-
-    font-size: 17px;
-
-    font-weight: 500;
-}
-
-
-.interest-list span {
-    width: 35px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    color: #8b2332;
-}
-
-
-/* ---------- RESEARCH VISION ---------- */
-
-.profile-highlight {
-    background: #202020;
-
-    color: white;
-
-    padding: 100px max(45px, calc((100% - 1160px) / 2));
-
-    display: grid;
-
-    grid-template-columns: 0.3fr 1fr;
-
-    gap: 80px;
-}
-
-
-.profile-highlight blockquote {
-    margin: 0;
-
-    max-width: 850px;
-
-    font-size: clamp(35px, 5vw, 62px);
-
-    line-height: 1.08;
-
-    letter-spacing: -2px;
-
-    font-weight: 400;
-}
-
-
-.profile-highlight p {
-    max-width: 700px;
-
-    margin-top: 40px;
-
-    color: #c9c9c9;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-.profile-highlight-label {
-    color: #d4a0aa;
-}
-
-
-/* ---------- EDUCATION ---------- */
-
-.education-item {
-    display: grid;
-
-    grid-template-columns: 150px 1fr;
-
-    gap: 30px;
-
-    padding: 30px 0;
-
-    border-top: 1px solid #d8d8d8;
-}
-
-
-.education-item:last-child {
-    border-bottom: 1px solid #d8d8d8;
-}
-
-
-.education-year {
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    color: #8b2332;
-}
-
-
-.education-item h3 {
-    margin: 0 0 8px;
-
-    font-size: 23px;
-
-    font-weight: 500;
-}
-
-
-.education-item p {
-    margin: 0;
-
-    font-size: 16px;
-
-    color: #666;
-}
-
-
-/* ---------- BACKGROUND ---------- */
-
-.background-section {
-    padding-bottom: 130px;
-}
-
-
-/* =========================================================
-   ABOUT PAGE — TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .profile-header {
-        padding: 70px 25px 100px;
-
+    .publication {
         grid-template-columns: 1fr;
 
-        gap: 60px;
+        gap: 12px;
+
+        padding: 35px 0;
+    }
+
+    .publication-year {
+        padding-top: 0;
+
+        font-size: 12px;
+    }
+
+    .publication-content h3 {
+        font-size: 21px;
+
+        line-height: 1.4;
+    }
+
+    .authors,
+    .journal {
+        font-size: 14px;
+    }
+
+    .publication-tags {
+        margin-top: 20px;
+
+        gap: 6px;
+    }
+
+    .tag {
+        font-size: 8px;
+
+        padding: 5px 7px;
+    }
+
+    .research-in-progress {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 
-    .profile-photo {
-        max-width: 500px;
-    }
-
-
-    .profile-section {
-        padding: 80px 25px;
-
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-
-    .profile-highlight {
-        padding: 80px 25px;
-
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-}
-
-
-/* =========================================================
-   ABOUT PAGE — MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
+    /* ---------- ABOUT ---------- */
 
     .profile-header {
         padding-top: 55px;
     }
-
 
     .profile-intro h1 {
         font-size: 65px;
@@ -998,21 +1529,17 @@ footer {
         letter-spacing: -3px;
     }
 
-
     .profile-description {
         font-size: 17px;
     }
-
 
     .profile-section-content h2 {
         font-size: 40px;
     }
 
-
     .profile-highlight blockquote {
         font-size: 40px;
     }
-
 
     .education-item {
         grid-template-columns: 1fr;
@@ -1020,9 +1547,43 @@ footer {
         gap: 8px;
     }
 
-
     .interest-list div {
         align-items: flex-start;
     }
+}
 
+
+/* =========================================================
+   VERY SMALL SCREENS — 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .site-name {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 57px;
+    }
+
+    .publications-hero h1 {
+        font-size: 38px;
+    }
+
+    .publication-content h3 {
+        font-size: 20px;
+    }
+
+    .filter-button {
+        padding: 8px 10px;
+    }
 }
