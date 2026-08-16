@@ -2821,3 +2821,553 @@ footer {
         font-size: 15px;
     }
 }
+
+/* =========================================================
+   TEACHING PAGE
+   ========================================================= */
+
+
+/* ---------- TEACHING HERO ---------- */
+
+.teaching-hero {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 100px 45px 90px;
+}
+
+.teaching-hero-inner {
+    max-width: 1000px;
+}
+
+.teaching-hero h1 {
+    max-width: 900px;
+
+    margin: 0;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+}
+
+.teaching-intro {
+    max-width: 700px;
+
+    margin: 35px 0 0;
+
+    color: #666;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+}
+
+
+/* ---------- TEACHING PHILOSOPHY ---------- */
+
+.teaching-philosophy {
+    background: #f5f5f3;
+
+    padding: 100px max(45px, calc((100% - 1160px) / 2));
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+}
+
+.teaching-section-label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b2332;
+}
+
+.teaching-philosophy-content {
+    max-width: 800px;
+}
+
+.teaching-philosophy-content h2 {
+    margin: 0 0 35px;
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.teaching-philosophy-content p {
+    max-width: 750px;
+
+    margin: 0 0 25px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* ---------- TEACHING EXPERIENCE ---------- */
+
+.teaching-section {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 105px 45px;
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+}
+
+.teaching-section-content {
+    max-width: 850px;
+}
+
+.teaching-list {
+    border-top: 1px solid #d8d8d8;
+}
+
+.teaching-entry {
+    display: grid;
+
+    grid-template-columns: 170px 1fr;
+
+    gap: 45px;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.teaching-entry-meta {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.teaching-entry-year {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+.teaching-entry-type {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+
+    color: #888;
+}
+
+.teaching-entry-main h3 {
+    margin: 0;
+
+    font-size: 27px;
+
+    line-height: 1.25;
+
+    font-weight: 500;
+}
+
+.teaching-entry-role {
+    margin: 10px 0 20px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #555;
+}
+
+.teaching-entry-main p:not(.teaching-entry-role) {
+    max-width: 700px;
+
+    margin: 0 0 15px;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+.teaching-entry-main p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- MENTORING ---------- */
+
+.teaching-section-alt {
+    background: #f5f5f3;
+
+    max-width: none;
+
+    padding-left: max(45px, calc((100% - 1160px) / 2));
+
+    padding-right: max(45px, calc((100% - 1160px) / 2));
+}
+
+.teaching-section-alt .teaching-section-content {
+    max-width: 850px;
+}
+
+.teaching-section-alt h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.teaching-large-text {
+    max-width: 750px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+.mentoring-grid {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.mentoring-card {
+    min-height: 280px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-top: 4px solid #8b2332;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.mentoring-number {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #8b2332;
+}
+
+.mentoring-card h3 {
+    margin: 40px 0 18px;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+}
+
+.mentoring-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- FACULTY DEVELOPMENT ---------- */
+
+.teaching-development {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 105px 45px;
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+}
+
+.teaching-development-content {
+    max-width: 850px;
+}
+
+.teaching-development-content h2 {
+    max-width: 800px;
+
+    margin: 0 0 30px;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.teaching-development-content > p {
+    max-width: 700px;
+
+    margin: 0 0 55px;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.development-list {
+    border-top: 1px solid #d8d8d8;
+}
+
+.development-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.development-year {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+.development-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    font-weight: 500;
+}
+
+.development-item p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- TEACHING CLOSING ---------- */
+
+.teaching-closing {
+    background: #202020;
+
+    color: #ffffff;
+
+    padding: 105px max(45px, calc((100% - 1160px) / 2));
+}
+
+.teaching-closing-inner {
+    max-width: 900px;
+}
+
+.teaching-closing .section-label {
+    color: #d4a0aa;
+}
+
+.teaching-closing h2 {
+    max-width: 850px;
+
+    margin: 0;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 400;
+}
+
+.teaching-closing p:last-child {
+    max-width: 700px;
+
+    margin: 35px 0 0;
+
+    color: #c8c8c8;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TEACHING PAGE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .teaching-hero {
+        padding: 75px 25px 70px;
+    }
+
+    .teaching-philosophy,
+    .teaching-section,
+    .teaching-development {
+        padding: 80px 25px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .teaching-section-alt {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .teaching-entry {
+        grid-template-columns: 130px 1fr;
+
+        gap: 30px;
+    }
+
+    .mentoring-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teaching-closing {
+        padding: 80px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   TEACHING PAGE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .teaching-hero {
+        padding: 60px 20px 55px;
+    }
+
+    .teaching-hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .teaching-intro {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .teaching-philosophy,
+    .teaching-section,
+    .teaching-development {
+        padding: 65px 20px;
+    }
+
+    .teaching-section-alt {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .teaching-philosophy-content h2,
+    .teaching-section-alt h2,
+    .teaching-development-content h2 {
+        font-size: 40px;
+    }
+
+    .teaching-philosophy-content p {
+        font-size: 16px;
+    }
+
+    .teaching-entry {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 35px 0;
+    }
+
+    .teaching-entry-main h3 {
+        font-size: 22px;
+    }
+
+    .teaching-entry-main p:not(.teaching-entry-role) {
+        font-size: 15px;
+    }
+
+    .mentoring-card {
+        min-height: auto;
+    }
+
+    .development-item {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .teaching-closing {
+        padding: 65px 20px;
+    }
+
+    .teaching-closing h2 {
+        font-size: 40px;
+    }
+
+}
