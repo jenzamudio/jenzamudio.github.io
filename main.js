@@ -158,6 +158,62 @@ function renderNews() {
 
 
 /* =========================================================
+   HOMEPAGE — RECENT NEWS
+   ========================================================= */
+
+function renderHomepageNews() {
+
+    const container = document.getElementById("homepage-news");
+
+    if (!container) {
+        return;
+    }
+
+    container.innerHTML = "";
+
+    newsItems.slice(0, 3).forEach(item => {
+
+        const article = document.createElement("article");
+
+        article.className = "homepage-news-item";
+
+        article.innerHTML = `
+
+            <div class="homepage-news-date">
+                ${item.date}
+            </div>
+
+            <div class="homepage-news-content">
+
+                <span class="homepage-news-category">
+                    ${item.category}
+                </span>
+
+                <h3>
+                    ${item.title}
+                </h3>
+
+                <p>
+                    ${item.summary}
+                </p>
+
+            </div>
+
+            <a href="news.html" class="homepage-news-arrow">
+                →
+            </a>
+
+        `;
+
+        container.appendChild(article);
+
+    });
+
+}
+
+renderHomepageNews();
+
+/* =========================================================
    START NEWS
    ========================================================= */
 
