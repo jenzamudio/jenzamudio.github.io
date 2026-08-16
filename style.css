@@ -608,17 +608,16 @@ footer {
 /* ---------- PROFILE HEADER ---------- */
 
 .profile-header {
-    max-width: 1250px;
-
+    max-width: 1150px;
     margin: 0 auto;
 
-    padding: 90px 45px 120px;
+    padding: 80px 45px 100px;
 
     display: grid;
 
-    grid-template-columns: 0.75fr 1fr;
+    grid-template-columns: 380px 1fr;
 
-    gap: 90px;
+    gap: 75px;
 
     align-items: center;
 }
@@ -627,14 +626,16 @@ footer {
 .profile-photo {
     position: relative;
 
-    width: 100%;
+    width: 380px;
+
+    max-width: 100%;
 }
 
 
 .profile-photo img {
     width: 100%;
 
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 3 / 4;
 
     object-fit: cover;
 
@@ -667,7 +668,7 @@ footer {
 .profile-intro h1 {
     margin: 0;
 
-    font-size: clamp(60px, 8vw, 105px);
+    font-size: clamp(55px, 6vw, 82px);
 
     line-height: 0.9;
 
