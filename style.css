@@ -234,6 +234,131 @@ nav a.active {
 
 
 /* =========================================================
+   HOMEPAGE — RECENT NEWS
+   ========================================================= */
+
+.recent-news {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 120px 45px;
+}
+
+.recent-news-header {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    gap: 80px;
+    margin-bottom: 70px;
+}
+
+.recent-news-header h2 {
+    max-width: 800px;
+    margin: 0;
+
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.recent-news-intro {
+    max-width: 700px;
+    margin: 35px 0 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* ---------- NEWS ITEMS ---------- */
+
+.homepage-news-item {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-top: 1px solid #d8d8d8;
+
+    align-items: start;
+
+    transition: padding-left 0.2s ease;
+}
+
+.homepage-news-item:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.homepage-news-item:hover {
+    padding-left: 8px;
+}
+
+.homepage-news-date {
+    padding-top: 3px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+.homepage-news-content {
+    max-width: 800px;
+}
+
+.homepage-news-category {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+
+    color: #888;
+}
+
+.homepage-news-content h3 {
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+.homepage-news-content p {
+    max-width: 700px;
+
+    margin: 12px 0 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #666;
+}
+
+.homepage-news-arrow {
+    padding-top: 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #8b2332;
+
+    transition: transform 0.2s ease;
+}
+
+.homepage-news-item:hover .homepage-news-arrow {
+    transform: translateX(5px);
+}
+
+.recent-news-footer {
+    margin-top: 35px;
+}
+
+/* =========================================================
    HOMEPAGE — RESEARCH INTRO
    ========================================================= */
 
