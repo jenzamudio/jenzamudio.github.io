@@ -599,3 +599,429 @@ footer {
     }
 
 }
+
+/* =========================================================
+   ABOUT / PROFILE PAGE
+   ========================================================= */
+
+
+/* ---------- PROFILE HEADER ---------- */
+
+.profile-header {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 90px 45px 120px;
+
+    display: grid;
+
+    grid-template-columns: 0.75fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.profile-photo {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.profile-photo img {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.profile-photo::after {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+    bottom: -18px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #8b2332;
+
+    z-index: -1;
+}
+
+
+.profile-intro {
+    max-width: 650px;
+}
+
+
+.profile-intro h1 {
+    margin: 0;
+
+    font-size: clamp(60px, 8vw, 105px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    font-weight: 500;
+}
+
+
+.profile-title {
+    margin: 40px 0 5px;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+}
+
+
+.profile-affiliation {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 16px;
+}
+
+
+.profile-description {
+    max-width: 600px;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+.profile-links {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+
+.profile-links a {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #202020;
+
+    padding-bottom: 4px;
+}
+
+
+.profile-links a:hover {
+    color: #8b2332;
+
+    border-color: #8b2332;
+}
+
+
+/* ---------- PROFILE SECTIONS ---------- */
+
+.profile-section {
+    padding: 100px 45px;
+
+    border-top: 1px solid #dedede;
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+.profile-section-label,
+.profile-highlight-label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b2332;
+}
+
+
+.profile-section-content {
+    max-width: 800px;
+}
+
+
+.profile-section-content h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+
+.profile-section-content p {
+    max-width: 750px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* ---------- INTERESTS ---------- */
+
+.interest-list {
+    margin-top: 55px;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+
+.interest-list div {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d8d8d8;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+
+.interest-list span {
+    width: 35px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #8b2332;
+}
+
+
+/* ---------- RESEARCH VISION ---------- */
+
+.profile-highlight {
+    background: #202020;
+
+    color: white;
+
+    padding: 100px max(45px, calc((100% - 1160px) / 2));
+
+    display: grid;
+
+    grid-template-columns: 0.3fr 1fr;
+
+    gap: 80px;
+}
+
+
+.profile-highlight blockquote {
+    margin: 0;
+
+    max-width: 850px;
+
+    font-size: clamp(35px, 5vw, 62px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 400;
+}
+
+
+.profile-highlight p {
+    max-width: 700px;
+
+    margin-top: 40px;
+
+    color: #c9c9c9;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+.profile-highlight-label {
+    color: #d4a0aa;
+}
+
+
+/* ---------- EDUCATION ---------- */
+
+.education-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+
+.education-item:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+
+.education-year {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+
+.education-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 23px;
+
+    font-weight: 500;
+}
+
+
+.education-item p {
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #666;
+}
+
+
+/* ---------- BACKGROUND ---------- */
+
+.background-section {
+    padding-bottom: 130px;
+}
+
+
+/* =========================================================
+   ABOUT PAGE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .profile-header {
+        padding: 70px 25px 100px;
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .profile-photo {
+        max-width: 500px;
+    }
+
+
+    .profile-section {
+        padding: 80px 25px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .profile-highlight {
+        padding: 80px 25px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT PAGE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .profile-header {
+        padding-top: 55px;
+    }
+
+
+    .profile-intro h1 {
+        font-size: 65px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .profile-description {
+        font-size: 17px;
+    }
+
+
+    .profile-section-content h2 {
+        font-size: 40px;
+    }
+
+
+    .profile-highlight blockquote {
+        font-size: 40px;
+    }
+
+
+    .education-item {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    .interest-list div {
+        align-items: flex-start;
+    }
+
+}
