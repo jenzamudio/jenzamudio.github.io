@@ -2343,3 +2343,320 @@ footer {
         font-size: 40px;
     }
 }
+
+/* =========================================================
+   NEWS PAGE
+   ========================================================= */
+
+.news-page {
+    width: 100%;
+}
+
+
+/* ---------- NEWS HERO ---------- */
+
+.news-hero {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    padding: 100px 45px 85px;
+}
+
+.news-hero .section-label {
+    margin-bottom: 25px;
+}
+
+.news-hero h1 {
+    max-width: 900px;
+
+    margin: 0;
+
+    font-size: clamp(48px, 6vw, 80px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+}
+
+.news-intro {
+    max-width: 700px;
+
+    margin: 35px 0 0;
+
+    color: #666;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+}
+
+
+/* ---------- NEWS ARCHIVE ---------- */
+
+.news-archive {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 0 45px 120px;
+}
+
+.news-section-label {
+    padding: 25px 0;
+
+    border-top: 1px solid #202020;
+    border-bottom: 1px solid #d8d8d8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b2332;
+}
+
+
+/* ---------- NEWS ITEM ---------- */
+
+.news-item {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.news-item-header {
+    display: grid;
+
+    grid-template-columns: 110px 1fr 40px;
+
+    gap: 35px;
+
+    align-items: start;
+
+    padding: 35px 0;
+
+    cursor: pointer;
+}
+
+.news-date {
+    padding-top: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b2332;
+}
+
+.news-item-title {
+    margin: 0;
+
+    font-size: 25px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    color: #202020;
+}
+
+.news-item-summary {
+    margin: 10px 0 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.news-toggle {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #cfcfcf;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    color: #8b2332;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.news-item-header:hover .news-toggle {
+    background: #8b2332;
+
+    color: white;
+
+    border-color: #8b2332;
+}
+
+
+/* ---------- EXPANDED NEWS ---------- */
+
+.news-item-details {
+    display: none;
+
+    padding: 0 75px 40px 145px;
+
+    max-width: 950px;
+}
+
+.news-item.open .news-item-details {
+    display: block;
+}
+
+.news-item.open .news-toggle {
+    transform: rotate(45deg);
+
+    background: #8b2332;
+
+    color: white;
+
+    border-color: #8b2332;
+}
+
+.news-item-details p {
+    margin: 0 0 20px;
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.news-item-details p:last-child {
+    margin-bottom: 0;
+}
+
+.news-item-details a {
+    color: #8b2332;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #8b2332;
+}
+
+.news-item-details a:hover {
+    color: #651724;
+
+    border-color: #651724;
+}
+
+
+/* ---------- NEWS CATEGORIES ---------- */
+
+.news-category {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 5px 9px;
+
+    border: 1px solid #d6d6d6;
+
+    background: #fafafa;
+
+    color: #555;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+/* =========================================================
+   NEWS — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .news-hero {
+        padding: 75px 25px 65px;
+    }
+
+    .news-archive {
+        padding: 0 25px 90px;
+    }
+
+    .news-item-header {
+        grid-template-columns: 85px 1fr 35px;
+
+        gap: 25px;
+    }
+
+    .news-item-details {
+        padding-left: 110px;
+        padding-right: 45px;
+    }
+}
+
+
+/* =========================================================
+   NEWS — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .news-hero {
+        padding: 60px 20px 55px;
+    }
+
+    .news-hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .news-intro {
+        font-size: 16px;
+    }
+
+    .news-archive {
+        padding: 0 20px 70px;
+    }
+
+    .news-item-header {
+        grid-template-columns: 1fr 35px;
+
+        gap: 15px;
+
+        padding: 30px 0;
+    }
+
+    .news-date {
+        grid-column: 1 / -1;
+
+        padding-top: 0;
+    }
+
+    .news-item-title {
+        font-size: 21px;
+    }
+
+    .news-item-summary {
+        font-size: 14px;
+    }
+
+    .news-item-details {
+        padding: 0 0 30px;
+    }
+
+    .news-item-details p {
+        font-size: 15px;
+    }
+}
