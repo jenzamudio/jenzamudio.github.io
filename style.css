@@ -3383,10 +3383,10 @@ footer {
 }
 
 .profile-title a {
-    color: #0056b3;
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 .profile-title a:hover {
-    color: #003d7a;
+    color: #8b2332;
 }
