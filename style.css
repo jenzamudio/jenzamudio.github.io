@@ -3371,3 +3371,13 @@ footer {
     }
 
 }
+
+.research-photo {
+    width: 250px;
+}
+
+.research-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
