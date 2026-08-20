@@ -3392,3 +3392,11 @@ footer {
 .profile-title a:hover {
     color: #8b2332;
 }
+
+.news-section {
+    background: #f5f5f3;
+}
+
+.news-section #homepage-news {
+    border-top: 1px solid #d8d8d8;
+}
