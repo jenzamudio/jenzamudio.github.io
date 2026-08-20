@@ -19,6 +19,8 @@ document.querySelectorAll("nav a").forEach(link => {
 
 });
 
+
+
 /* =========================================================
    RESEARCH PROJECTS
    ========================================================= */
@@ -200,96 +202,78 @@ const newsItems = [
    RENDER NEWS
    ========================================================= */
 
-function renderNews() {
+function displayNews() {
 
-    const container = document.getElementById("news-container");
+    const newsContainer = document.getElementById("news-container");
 
-    /*
-       If we're on a page that doesn't contain
-       the news container, do nothing.
-    */
+    if (!newsContainer) return;
 
-    if (!container) {
-        return;
-    }
+    newsContainer.innerHTML = "";
 
+    newsItems.forEach((item) => {
 
-    container.innerHTML = "";
+        const article = document.createElement("article");
 
+        article.className = "news-item";
 
-    newsItems.forEach(item => {
-
-        const newsItem = document.createElement("article");
-
-        newsItem.className = "news-item";
-
-
-        const detailsHTML = item.details
-            .map(paragraph => `<p>${paragraph}</p>`)
-            .join("");
-
-
-        newsItem.innerHTML = `
-
+        article.innerHTML = `
+            
             <div class="news-item-header">
 
                 <div class="news-date">
                     ${item.date}
                 </div>
 
-
                 <div>
-
                     <h2 class="news-item-title">
                         ${item.title}
                     </h2>
-
 
                     <p class="news-item-summary">
                         ${item.summary}
                     </p>
 
-
                     <span class="news-category">
                         ${item.category}
                     </span>
-
                 </div>
 
-
-                <div class="news-toggle">
+                <button
+                    class="news-toggle"
+                    aria-label="Expand news item"
+                >
                     +
-                </div>
+                </button>
 
             </div>
 
 
             <div class="news-item-details">
 
-                ${detailsHTML}
+                <p>
+                    ${item.summary}
+                </p>
 
             </div>
 
         `;
 
-
-        const header =
-            newsItem.querySelector(".news-item-header");
-
+        const header = article.querySelector(".news-item-header");
 
         header.addEventListener("click", () => {
 
-            newsItem.classList.toggle("open");
+            article.classList.toggle("open");
 
         });
 
-
-        container.appendChild(newsItem);
+        newsContainer.appendChild(article);
 
     });
 
 }
 
+
+displayNews();
 
 /* =========================================================
    HOMEPAGE — RECENT NEWS
