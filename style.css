@@ -2636,7 +2636,7 @@ footer {
 .news-date {
     padding-top: 4px;
 
-    font-size: 12px;
+    font-size: 16px;
 
     font-weight: 700;
 
@@ -2648,7 +2648,7 @@ footer {
 .news-item-title {
     margin: 0;
 
-    font-size: 25px;
+    font-size: 18px;
 
     line-height: 1.35;
 
