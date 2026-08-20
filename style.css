@@ -1186,9 +1186,11 @@ nav a.active {
 
     display: grid;
 
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.3fr 250px 1fr;
 
-    gap: 80px;
+    gap: 50px;
+
+    align-items: center;
 }
 
 .profile-highlight blockquote {
