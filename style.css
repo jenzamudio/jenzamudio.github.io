@@ -3400,3 +3400,55 @@ footer {
 .news-section #homepage-news {
     border-top: 1px solid #d8d8d8;
 }
+
+/* =========================================================
+   RESEARCH VISION — IMAGE + TEXT
+   ========================================================= */
+
+.research-vision-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.research-photo {
+    width: 250px;
+}
+
+.research-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Smaller research vision statement */
+
+.profile-highlight blockquote {
+    margin: 0;
+
+    max-width: 750px;
+
+    font-size: clamp(28px, 3vw, 42px);
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+
+    font-weight: 400;
+}
+
+
+/* Research description */
+
+.profile-highlight p {
+    max-width: 700px;
+
+    margin-top: 35px;
+
+    color: #c9c9c9;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
