@@ -3381,3 +3381,12 @@ footer {
     height: auto;
     display: block;
 }
+
+.profile-title a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.profile-title a:hover {
+    color: #003d7a;
+}
