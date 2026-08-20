@@ -335,4 +335,4 @@ renderHomepageNews();
    START NEWS
    ========================================================= */
 
-renderNews();
+displayNews();
