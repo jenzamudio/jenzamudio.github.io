@@ -309,7 +309,7 @@ function renderHomepageNews() {
                 </h3>
 
                 <p>
-                    ${item.summary}
+                    ${item.details}
                 </p>
 
             </div>
