@@ -1,7 +1,5 @@
 # Jennifer Zamudio Academic Website
 
-This is a starter academic website designed as a clean, Purdue-IDEAL-inspired custom site.
-
 ## Main files
 
 - `index.html` — homepage
