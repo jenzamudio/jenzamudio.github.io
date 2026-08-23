@@ -3553,13 +3553,8 @@ html {
 }
 
 .research-project {
-    display: grid;
-
-    grid-template-columns: 1fr 0.8fr;
-
-    gap: 55px;
-
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 
     margin-top: 40px;
     padding-top: 45px;
@@ -3568,7 +3563,7 @@ html {
 }
 
 .research-project-text {
-    max-width: 650px;
+    max-width: 800px;
 }
 
 .research-project-text .section-label {
@@ -3593,6 +3588,7 @@ html {
 
 .research-project-image {
     width: 100%;
+    margin-bottom: 45px;
 }
 
 .research-project-image img {
