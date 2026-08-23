@@ -3496,3 +3496,64 @@ footer {
 .social-links a:hover img {
     opacity: 0.7;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.research-project-section {
+    scroll-margin-top: 100px;
+}
+
+.research-projects {
+    margin-top: 120px;
+}
+
+.research-project-section {
+    padding: 100px 0;
+    border-top: 1px solid #d8d5cf;
+}
+
+.research-project-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.research-project-header h2 {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.research-project-intro {
+    max-width: 750px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 70px;
+}
+
+.research-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    padding: 60px 0;
+    border-top: 1px solid #e5e2dc;
+}
+
+.research-project-text {
+    max-width: 600px;
+}
+
+.research-project-text h3 {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.research-project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
