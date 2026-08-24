@@ -3563,7 +3563,7 @@ html {
 }
 
 .research-project-text {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .research-project-text .section-label {
