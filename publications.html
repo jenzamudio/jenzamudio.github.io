@@ -896,26 +896,25 @@ filterButtons.forEach(button => {
         button.classList.add("active");
 
 
-        publications.forEach(publication => {
+     publications.forEach(publication => {
 
-            const tags =
-                publication.getAttribute("data-tags");
+    const tags =
+        publication.getAttribute("data-tags").split(" ");
 
+    if (
+        filter === "all" ||
+        tags.includes(filter)
+    ) {
 
-            if (
-                filter === "all" ||
-                tags.includes(filter)
-            ) {
+        publication.style.display = "grid";
 
-                publication.style.display = "grid";
+    } else {
 
-            } else {
+        publication.style.display = "none";
 
-                publication.style.display = "none";
+    }
 
-            }
-
-        });
+});
 
     });
 
