@@ -3543,7 +3543,7 @@ html {
 }
 
 .research-project-intro {
-    max-width: 750px;
+    max-width: 100%;
 
     margin: 0 0 50px;
 
