@@ -50,15 +50,15 @@ const newsItems = [
 
     {
         date: "April 8, 2025",
-        title: "Received an Honorable Mention for the NSF Graduate Research Fellowship Program",
-        details: "Received an Honorable Mention for the NSF Graduate Research Fellowship Program.",
+        title: "Honorable Mention for the NSF Graduate Research Fellowship Program",
+        details: "Received an Honorable Mention by the National Science Foundation Graduate Research Fellowship Program (NSF GRFP), a highly competitive national fellowship program with a reduced number of awards in 2025.",
         category: "AWARD"
     },
 
     {
         date: "March 24, 2025",
         title: "Passed my preliminary exam and became a PhD Candidate",
-        details: "Passed my preliminary exam, defending my dissertation proposal on patient-provider connectedness, and officially became a PhD Candidate.",
+        details: "Passed my preliminary exam, defending my dissertation proposal on patient-clinician connection, and officially became a PhD Candidate.",
         category: "MILESTONE"
     },
 
